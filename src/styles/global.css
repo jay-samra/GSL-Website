@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+@import "tailwindcss/base";
+@import "tailwindcss/utilities";
+
+body {
+    font-family: 'Schehehrazade New', static;
+}
