@@ -1,5 +1,6 @@
 ---
 import LandingSection from "../components/LandingSection.astro"
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -12,15 +13,22 @@ import LandingSection from "../components/LandingSection.astro"
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
   		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Scheherazade+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 	</head>
 	
 	
 	
 	<section>
 		
-		<h1 class="">
-			GSL
+		<h1 class="font-montserrat font-thin text-9xl">
+		GSL (Tailwind)
+		</h1>
+		<h1 class="font-montserrat">
+		GSL (Tailwind)
+		</h1>
+		<h1 style="font-family: 'Montserrat', sans-serif; font-thin text-9xl">
+			GSL (inline)
 		</h1>
 		<LandingSection></LandingSection>
 	

@@ -1,8 +1,7 @@
-@import "tailwindcss";
-@import "tailwindcss/utilities";
-@import "tailwindcss/base";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-    font-family: 'Schehehrazade New', static;
+    font-family: 'Montserrat', sans-serif;
 }
