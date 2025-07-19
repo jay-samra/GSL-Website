@@ -1,31 +1,65 @@
 ---
-
+// <script src="https://kit.fontawesome.com/51bae25a34.js" crossorigin="anonymous"></script>
 ---
 
-<div class="relative flex h-[500px] bg-[url('')] bg-cover bg-center">
-    <!-- blur can be either sm or xsm -->
+<div class="relative flex h-[600px] bg-[url('')] bg-cover bg-center overflow-hidden">
+    <!-- Background image with overlay -->
     <img src="/nightBridge.jpg" class="absolute object-cover w-full h-full blur-sm">
+    <div class="absolute inset-0 bg-black/40"></div>
 
-
-    <div class="relative w-full grid grid-cols-3 h-full z-10 pt-40 text-2xl text-white">
-
-        <div>
-            <h1 class="flex items-center justify-center text-white"> Intermodal Drayage Services</h1>
-            <p class="pt-12 text-xl pl-10">We provide reliable, on-time drayage services from the Oakland, Lathrop, and Stockton intermodal ramps to destinations across Northern California. </p>
+    <!-- Content container -->
+    <div class="relative w-full h-full z-10 flex flex-col justify-center">
+        
+        <!-- Section title -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-white mb-4">Our Services</h2>
+            <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
         </div>
 
-        <div>
-            <h1 class="flex items-center justify-center text-white"> Dedicated Customer Support</h1>
-            <p class="pt-12 pr-7 pl-3 text-xl">Our responsive customer support team is available around the clock to provide real-time updates, resolve issues quickly, and ensure transparent communication throughout every shipment.</p>
-        </div>
+        <!-- Services grid -->
+        <div class="grid grid-cols-3 gap-8 px-8 max-w-7xl mx-auto">
 
-        <div>
-            <h1 class="flex items-center justify-center text-white"> Cross-Docking & Short-Term Storage</h1>
-            <p class="pt-12 text-xl pl-3">We offer cross-docking and short-term storage solutions to reduce handling time and keep your supply chain moving. Our facilities near key rail hubs ensure fast turnaround for time-sensitive cargo.</p>
-        </div>
+            <!-- Service 1 -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+                <div class="text-center mb-4">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+                            <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v8a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H17a1 1 0 001-1V8a1 1 0 00-1-1h-3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Intermodal Drayage Services</h3>
+                </div>
+                <p class="text-gray-200 text-sm leading-relaxed">We provide reliable, on-time drayage services from the Oakland, Lathrop, and Stockton intermodal ramps to destinations across Northern California.</p>
+            </div>
 
+            <!-- Service 2 -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+                <div class="text-center mb-4">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Dedicated Customer Support</h3>
+                </div>
+                <p class="text-gray-200 text-sm leading-relaxed">Our responsive customer support team is available around the clock to provide real-time updates, resolve issues quickly, and ensure transparent communication.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+                <div class="text-center mb-4">
+                    <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm3 5a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Cross-Docking & Storage</h3>
+                </div>
+                <p class="text-gray-200 text-sm leading-relaxed">We offer cross-docking and short-term storage solutions to reduce handling time and keep your supply chain moving efficiently through key rail hubs.</p>
+            </div>
+
+        </div>
     </div>
-
-     
 
 </div>
