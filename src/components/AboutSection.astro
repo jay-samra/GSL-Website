@@ -1,20 +1,63 @@
 ---
-
+import Button from "../components/Button.astro"
 ---
 
-<div class="flex h-[500px]">
-    <!-- Left Half -->
-    <div class="w-1/2 justify-center">         
-        <img src="/logo.png "class="min-h-1/2 justify-center pt-20 pl-[400px] pb-12">
+<div class="bg-gradient-to-r from-gray-50 to-white py-16">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="flex items-center h-auto gap-12">
+            
+            <!-- Logo -->
+            <div class="w-1/2 flex justify-center items-center">         
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <img 
+                        src="/logo.png" 
+                        alt="Golden State Lines Logo" 
+                        class="w-full max-w-sm mx-auto h-auto object-contain"
+                    >
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="w-1/2 space-y-6"> 
+                <div class="space-y-4">
+                    <h2 class="text-4xl font-bold text-gray-800 leading-tight">
+                        Here to meet your 
+                        <span class="text-blue-600">transportation needs!</span>
+                    </h2>
+                    <div class="w-16 h-1 bg-blue-600"></div>
+                </div>
                 
-        </img> 
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    Serving the Bay Area since <span class="font-semibold text-blue-600">2001</span>, we proudly offer reliable and professional services extending from the heart of the Bay to the Central Valley. 
+                </p>
+                
+                <p class="text-gray-600 leading-relaxed">
+                    With over two decades of experience, our team is committed to delivering quality, efficiency, and customer satisfaction on every project—no matter the size or scope. Whether you're in San Francisco, Oakland, San Jose, Stockton, or anywhere in between, we're here to help get the job done right.
+                </p>
+
+                <!-- highlights -->
+                <div class="grid grid-cols-3 gap-4 pt-6">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-blue-600">20+</div>
+                        <div class="text-sm text-gray-500">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-blue-600">24/7</div>
+                        <div class="text-sm text-gray-500">Customer Support</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-blue-600">100%</div>
+                        <div class="text-sm text-gray-500">Reliable Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
-
-    <!-- Right Half -->
-    <div class="w-1/2"> 
-        <h1 class="justify-center pt-32 pl-[250px] text-2xl text-black"> Here to meet your transportation needs! </h1>
-        <p class="justify-center pt-10 pl-20 pr-20"> Serving the Bay Area since 2001, we proudly offer reliable and professional services extending from the heart of the Bay to the Central Valley. With over two decades of experience, our team is committed to delivering quality, efficiency, and customer satisfaction on every project—no matter the size or scope. Whether you're in San Francisco, Oakland, San Jose, Stockton, or anywhere in between, we're here to help get the job done right. </p>
+<!-- Button -->
+<div class="bg-white py-8">
+    <div class="flex justify-center">
+        <Button class="cursor-pointer"></Button>
     </div>
-
 </div>
