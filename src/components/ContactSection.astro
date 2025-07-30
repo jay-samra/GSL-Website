@@ -2,21 +2,45 @@
 
 ---
 
-<div class="h-[400px] flex">
+<div class="min-h-[600px] flex bg-white-900">
+    
     <!-- Left Side -->
-    <div class="w-1/2 justify-center items-center text-center pl-8 pr-8">
-        <h2 class="text-5xl font-bold text-gray-500 mb-4 leading-tight drop-shadow-lg mt-40">
-                    Join Us Today!
-            
+    <div class="w-1/2 flex flex-col justify-center items-center text-center px-12">
+        <h2 class="text-5xl font-bold text-white mb-6 leading-tight">
+            Get In Touch With
+            <span class="text-red-400">Golden State Lines</span>
         </h2>
-        <p> At Golden State Lines, we are committed to delivering reliable, efficient, and customer-focused transportation services across Northern California. Our experienced team understands the logistics industry inside and out, and we take pride in offering consistent freight opportunities, responsive support, and a strong network of trusted partners. </p>
+        <div class="w-24 h-1 bg-red-500 mb-6"></div>
+        <p class="text-gray-300 text-lg leading-relaxed max-w-md"> 
+            At Golden State Lines, we are committed to delivering reliable, efficient, and customer-focused transportation services across Northern California. Our experienced team understands the logistics industry inside and out, and we take pride in offering consistent freight opportunities, responsive support, and a strong network of trusted partners. 
+        </p>
+        
+        
+        <div class="mt-8 space-y-4 text-white">
+            <div class="flex items-center justify-center space-x-3">
+                <svg class="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                </svg>
+                <span class="text-lg font-medium">(510) 111-2222</span>
+            </div>
+            <div class="flex items-center justify-center space-x-3">
+                <svg class="w-5 h-5 text-red-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                </svg>
+                <span class="text-lg">info@goldenstatelines.com</span>
+            </div>
+        </div>
     </div>
 
-    <!-- Right Side -->
-    <div class="w-1/2">
-        <div class="justify-center">
-            <form>
-                 <!-- Name & Company -->
+    <!-- Right Side-->
+    <div class="w-1/2 bg-white flex flex-col justify-center px-12 py-16">
+        <div class="max-w-md mx-auto w-full">
+            <h3 class="text-3xl font-bold text-gray-800 mb-2">Send Us a Message</h3>
+            <p class="text-gray-600 mb-8">Ready to work with us? Fill out the form below and we'll get back to you within 24 hours.</p>
+            
+            <form class="space-y-6">
+                <!-- Name & Company -->
                 <div class="grid grid-cols-2 gap-4">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Your Name *</label>
@@ -28,17 +52,42 @@
                     </div>
                 </div>
 
-                <label for="fname">First Name:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br>
-                
-                <label for="lname"> Last Name</label><br>
-                <input type="text" id="lname" name="lname" value="Smith"><br>
+                <!-- Email & Phone -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                        <input type="email" required class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                        <input type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                    </div>
+                </div>
 
-                <label for="phone"> Phone Number</label><br>
-                <input type="text" id="phone" name="phone" value="123456789"><br>
+                <!-- Service Type -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Service Needed</label>
+                    <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                        <option>Select a service...</option>
+                        <option>Intermodal Drayage</option>
+                        <option>Local Transportation</option>
+                        <option>Cross-Docking</option>
+                        <option>Storage Solutions</option>
+                        <option>Driver Opportunities</option>
+                        <option>Other</option>
+                    </select>
+                </div>
 
-                <label for="email"> Email </label><br>
-                <input type="text" id="email" name="email" value="gmail.com"><br>
+                <!-- Message -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                    <textarea required rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors" placeholder="Tell us about your transportation needs..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    Send Message
+                </button>
             </form>
         </div>
     </div>
