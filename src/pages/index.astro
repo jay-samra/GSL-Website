@@ -6,6 +6,7 @@ import About from "../components/AboutSection.astro";
 import Services from "../components/ServicesSection.astro"
 import CareerSection from "../components/CareerSection.astro";
 import ContactSection from "../components/ContactSection.astro";
+import Copyright from "../components/Copyright.astro";
 ---
 
 <html lang="en">
@@ -34,23 +35,28 @@ import ContactSection from "../components/ContactSection.astro";
 
 
     <!-- About Section -->
-	<section >
+	<section id="About">
 		<About></About>
 	</section>
 
 
 	<!-- Services Section -->
-	<section>
+	<section id="Services">
 		<Services></Services>
 	</section>
 
 	<!-- Career Section -->
-	 <section>
+	 <section id="Career">
 		<CareerSection></CareerSection>
 	 </section>
 
 	 <!-- Contact Section -->
-	  <section>
+	  <section id="Contact">
 		<ContactSection></ContactSection>
 	  </section>
+
+	  <!-- Copyright Bar -->
+	   <section id="Copyright">
+		<Copyright></Copyright>
+	   </section>
 </html>
