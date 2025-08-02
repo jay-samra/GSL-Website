@@ -27,12 +27,39 @@ import Copyright from "../components/Copyright.astro";
 
 
 	<!-- Hero Section -->
-	<section class="bg-[url('/goldenGate.jpg')] bg-cover bg-center h-screen flex items-center justify-center text-white">
-		
+	<section class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+		<!-- Alternating Background Images -->
+        <div class="absolute inset-0 bg-cover bg-center animation1" style="background-image: url('/bayBridge.jpg');"></div>
+        <div class="absolute inset-0 bg-cover bg-center animation2" style="background-image: url('/goldenGate.jpg');"></div>
+       
+        <!-- dark overlay -->
+        <div class="absolute inset-0 bg-black/30"></div>
 		<NavBar></NavBar>
 
 	</section>
 
+	<!-- Animation Details -->
+	 <style>
+		@keyframes animate1{
+			0%, 45% {opacity : 1;}
+			50%, 95% {opacity : 0;}
+			100% {opacity : 1;}
+		}
+
+		@keyframes animate2{
+			0%, 45% {opacity : 0;}
+			50%, 95% {opacity : 1;}
+			100%  {opacity : 0;}
+		}
+
+		.animation1{
+			animation: animate1 8s infinite
+		}
+
+		.animation2{
+			animation: animate2 8s infinite
+		}
+	 </style>
 
     <!-- About Section -->
 	<section id="About">
