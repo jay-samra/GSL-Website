@@ -1,47 +1,5 @@
-# Astro Starter Kit: Minimal
-
-```sh
-npm create astro@latest -- --template minimal
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<img width="1906" height="945" alt="Screenshot 2025-08-08 224221" src="https://github.com/user-attachments/assets/96729650-5666-4cf6-837e-e474094f77ad" />
+<img width="1904" height="715" alt="Screenshot 2025-08-08 224233" src="https://github.com/user-attachments/assets/8f703726-d259-4a2d-afb9-2cbb397d9911" />
+<img width="1905" height="698" alt="Screenshot 2025-08-08 224243" src="https://github.com/user-attachments/assets/d140dc6b-605b-40a2-b338-983540ade4dd" />
+<img width="1903" height="697" alt="Screenshot 2025-08-08 224255" src="https://github.com/user-attachments/assets/c49872b7-9e30-445e-85b3-0c23e2d111ad" />
+<img width="1906" height="751" alt="image" src="https://github.com/user-attachments/assets/6c5c0179-94bc-4def-9176-17b8e7b87bf5" />
